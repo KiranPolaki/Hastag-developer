@@ -1,86 +1,219 @@
 //Table
 
 //Data in Object format
-//TODOs
+//TODO:
 //1) convert to JSON
 //2) store them in DB
 const projects = [
   {
-    id: 1,
-    name: "Todo-App",
+    name: "TodoList",
     category: "Web",
     dif: "Easy",
-    code: "www.edo.com",
+    code: "https://github.com/CodeExplainedRepo/To-Do-List?tab=readme-ov-file",
   },
   {
-    id: 2,
-    name: "Todo-App2",
+    name: "Simple Portfolio",
     category: "Web",
     dif: "Easy",
-    code: "www.edo.com",
+    code: "https://github.com/manuarora700/simple-developer-portfolio-website",
   },
   {
-    id: 3,
-    name: "Todo-App3",
+    name: "Weather App",
     category: "Web",
     dif: "Easy",
-    code: "www.edo.com",
+    code: "https://github.com/Tanishka-dev/Weather-App-JS",
   },
   {
-    id: 4,
-    name: "Chat-App",
+    name: "Movie recommendation",
+    category: "Web",
+    dif: "Medium",
+    code: "https://github.com/kepelrs/Movie-Picker",
+  },
+  {
+    name: "ELearning platform",
+    category: "Web",
+    dif: "Medium",
+    code: "https://github.com/oppia/oppia",
+  },
+  {
+    name: "edo okate",
     category: "Web",
     dif: "Medium",
     code: "www.edo.com",
   },
   {
-    id: 5,
-    name: "Chat-App",
+    name: "Socialmedia platform",
     category: "Web",
+    dif: "Hard",
+    code: "https://github.com/dan-divy/spruce",
+  },
+  {
+    name: "Chat App",
+    category: "Web",
+    dif: "Hard",
+    code: "https://github.com/adrianhajdin/project_chat_application",
+  },
+  {
+    name: "edo okate",
+    category: "Web",
+    dif: "Hard",
+    code: "www.edo.com",
+  },
+  {
+    name: "edo okate",
+    category: "Web",
+    dif: "Hard",
+    code: "www.edo.com",
+  },
+  {
+    name: "Tip Calculator",
+    category: "Android",
+    dif: "Easy",
+    code: "https://github.com/ArasanKat/Android-Tip-Calculator",
+  },
+  {
+    name: "Task List",
+    category: "Android",
+    dif: "Easy",
+    code: "https://github.com/matthewman/ToDoList",
+  },
+  {
+    name: "Weather app",
+    category: "Android",
+    dif: "Easy",
+    code: "https://github.com/Mercandj/android-dev-challenge-compose-4",
+  },
+  {
+    name: "Expense Tracker",
+    category: "Android",
     dif: "Medium",
-    code: "www.edo.com",
+    code: "https://github.com/RetroMusicPlayer/RetroMusicPlayer",
   },
   {
-    id: 6,
-    name: "Chat-App",
-    category: "Web",
+    name: "Music Player",
+    category: "Android",
     dif: "Medium",
-    code: "www.edo.com",
+    code: "https://github.com/RetroMusicPlayer/RetroMusicPlayer",
   },
   {
-    id: 7,
-    name: "Chat-App",
-    category: "Web",
+    name: "Fitness Tracker",
+    category: "Android",
     dif: "Hard",
-    code: "www.edo.com",
+    code: "https://github.com/brodeurlv/fastnfitness",
   },
   {
-    id: 8,
-    name: "Chat-App",
-    category: "Web",
+    name: "Chat App",
+    category: "Android",
     dif: "Hard",
-    code: "www.edo.com",
+    code: "https://github.com/GetStream/stream-chat-android",
   },
   {
-    id: 9,
-    name: "Chat-App",
-    category: "Web",
-    dif: "Hard",
-    code: "www.edo.com",
-  },
-  {
-    id: 10,
-    name: "Chat-analysis",
+    name: "Titanic Disaster",
     category: "ML",
     dif: "Easy",
-    code: "www.edo.com",
+    code: "https://github.com/agconti/kaggle-titanic",
   },
   {
-    id: 11,
-    name: "Chat-analysis23",
-    category: "AI",
+    name: "Iris Species Classification",
+    category: "ML",
     dif: "Easy",
-    code: "www.edo.com",
+    code: "https://github.com/jbrownlee/Datasets",
+  },
+  {
+    name: "Handwritten Digit Recognition",
+    category: "ML",
+    dif: "Easy",
+    code: "https://github.com/topics/mnist",
+  },
+  {
+    name: "Sentiment Analysis ",
+    category: "ML",
+    dif: "Medium",
+    code: "https://github.com/topics/twitter-sentiment-analysis",
+  },
+  {
+    name: "Movie Recommendation",
+    category: "ML",
+    dif: "Medium",
+    code: "https://github.com/topics/movie-recommendation",
+  },
+  {
+    name: "Image Caption Generator",
+    category: "ML",
+    dif: "Medium",
+    code: "https://github.com/topics/image-captioning",
+  },
+  {
+    name: "Stock Price Prediction",
+    category: "ML",
+    dif: "Hard",
+    code: "https://github.com/topics/stock-price-prediction",
+  },
+  {
+    name: "Voice Recognition System",
+    category: "ML",
+    dif: "Hard",
+    code: "https://github.com/topics/voice-recognition",
+  },
+  {
+    name: "Self-Driving Car Technology",
+    category: "ML",
+    dif: "Hard",
+    code: "https://github.com/udacity/self-driving-car",
+  },
+  {
+    name: "Deep Reinforcement Learning",
+    category: "ML",
+    dif: "Hard",
+    code: "https://github.com/topics/deep-reinforcement-learning",
+  },
+  {
+    name: "Crypto wallet",
+    category: "Block Chain",
+    dif: "Easy",
+    code: "https://github.com/bitpay/wallet",
+  },
+  {
+    name: "Simple blockchain",
+    category: "Block Chain",
+    dif: "Easy",
+    code: "https://github.com/dvf/blockchain",
+  },
+  {
+    name: "Token Tracker",
+    category: "Block Chain",
+    dif: "Easy",
+    code: "https://github.com/pixel-point/web3js-tracker-example",
+  },
+  {
+    name: "Voting System",
+    category: "Block Chain",
+    dif: "Medium",
+    code: "https://github.com/mehtaAnsh/BlockChainVoting",
+  },
+  {
+    name: "Blockchain Market place",
+    category: "Block Chain",
+    dif: "Medium",
+    code: "https://github.com/ohager/signum-dappository",
+  },
+  {
+    name: "NFT Platform",
+    category: "Block Chain",
+    dif: "Medium",
+    code: "https://github.com/anaai/anaai",
+  },
+  {
+    name: "Defi app",
+    category: "Block Chain",
+    dif: "Hard",
+    code: "https://github.com/ahmetozlu/defi_yield_farming",
+  },
+  {
+    name: "edo okate",
+    category: "Block Chain",
+    dif: "Hard",
+    code: "",
   },
 ];
 
@@ -107,6 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const filterBtns = btnContainer.querySelectorAll(".filter-btn");
 
+  //TODO: Easy medium hard tables must be collapsable tables
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       const category = e.currentTarget.dataset.id;
