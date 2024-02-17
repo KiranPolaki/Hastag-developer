@@ -9,6 +9,9 @@
   --light-gray: #f0f0f0;
   --gray: #808080;
   --dark-gray: #555;
+  --easy-green: #bef264;
+  --medium-yellow: #fef08a;
+  --hard-red: #f87171;
 }
 
 * {
@@ -29,7 +32,6 @@ body {
   max-width: 1280px;
   display: flex;
   text-align: center;
-  max-width: 1280px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -297,10 +299,13 @@ body {
 }
 
 .projects-container {
+  max-width: 1280px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  margin: 0.6rem;
 }
 
 .project-box {
@@ -316,20 +321,74 @@ body {
   gap: 1rem;
 }
 
-.btn-container button {
+.filter-btn {
   border: none;
   padding: 5px;
   font-size: 1rem;
   background-color: var(--background-color);
-}
-/* TODO: add this class to any active button */
-.btn-active {
-  border-bottom: 1px solid var(--link-color);
+  cursor: pointer;
+  color: var(--gray);
 }
 
-/* table {
-  margin: auto;
-  min-width: 300px;
-  max-width: 100%;
-  border-collapse: collapse;
+/* TODO: add this class to any active button */
+/* .btn-active {
+  border-bottom: 1px; solid var(--link-color);
+  color: var(--link-color);
 } */
+
+table {
+  /* border: 1px black solid; */
+  border-radius: 5px;
+  width: 100%;
+}
+
+.project-tbody td {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.easy-data tr:nth-child(odd) {
+  background-color: #ecfccb;
+}
+
+.easy-data tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f7fee7;
+}
+
+.medium-data tr:nth-child(odd) {
+  background-color: #fef9c3;
+}
+
+.medium-data tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #fefce8;
+}
+
+.hard-data tr:nth-child(odd) {
+  background-color: #fee2e2;
+}
+
+.hard-data tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #fef2f2;
+}
+
+.easy-row {
+  background-color: var(--easy-green);
+}
+.medium-row {
+  background-color: var(--medium-yellow);
+}
+.hard-row {
+  background-color: var(--hard-red);
+}
+.easy-row,
+.medium-row,
+.hard-row {
+  border: #333333 1px solid;
+  border-radius: 3px;
+}

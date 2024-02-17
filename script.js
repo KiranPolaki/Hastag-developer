@@ -267,16 +267,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const tbody = document.createElement("tbody");
-    // create the info row
-    let infoRow = document.createElement("tr");
-    let infoName = document.createElement("td");
-    let infoCode = document.createElement("td");
-    infoName.textContent = "Name";
-    infoCode.textContent = "Code";
-    infoRow.appendChild(infoName);
-    infoRow.appendChild(infoCode);
+    tbody.className = "project-tbody";
+    // create the info row - not important
+    // let infoRow = document.createElement("tr");
+    // let infoName = document.createElement("td");
+    // let infoCode = document.createElement("td");
+    // infoName.textContent = "Name";
+    // infoCode.textContent = "Code";
+    // infoRow.appendChild(infoName);
+    // infoRow.appendChild(infoCode);
     // append the info row to the tbody
-    tbody.appendChild(infoRow);
+    // tbody.appendChild(infoRow);
     // loop through the projects and create the other rows
     typeOfProjects.forEach((project) => {
       let row = document.createElement("tr");
@@ -295,5 +296,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     // append the tbody to the diffRow
     diffRow.appendChild(tbody);
+    // console.log(document.querySelector("table").innerHTML);
   }
 });
