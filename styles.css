@@ -295,3 +295,9 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
