@@ -296,8 +296,40 @@ body {
   }
 }
 
-table,
-tr,
-td {
-  border: 1px solid black;
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-container button {
+  border: none;
+  padding: 5px;
+  font-size: 1rem;
+  background-color: var(--background-color);
+}
+/* TODO: add this class to any active button */
+.btn-active {
+  border-bottom: 1px solid var(--link-color);
+}
+
+/* table {
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
+} */
