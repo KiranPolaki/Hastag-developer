@@ -272,7 +272,7 @@ body {
   border: none;
   border-radius: 0.625rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding: 1.8rem 2.5rem;
 }
 
@@ -299,21 +299,30 @@ body {
 }
 
 .projects-container {
-  max-width: 1280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  padding: 2rem;
-  margin: 0.6rem;
+  background-color: var(--light-gray);
+  padding: 2.3rem 0;
+  text-align: center;
 }
 
 .project-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.project-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+.project-title {
+  font-size: 1.7rem;
+}
+
+.project-text {
+  color: var(--gray);
+  font-size: 1rem;
 }
 
 .btn-container {
@@ -325,9 +334,14 @@ body {
   border: none;
   padding: 5px;
   font-size: 1rem;
-  background-color: var(--background-color);
+  background-color: var(--light-gray);
   cursor: pointer;
   color: var(--gray);
+  font-weight: 600;
+}
+
+.filter-btn:hover {
+  color: var(--link-color);
 }
 
 /* TODO: add this class to any active button */
