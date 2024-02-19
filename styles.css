@@ -305,7 +305,7 @@ body {
 }
 
 .project-box {
-  max-width: 800px;
+  max-width: 680px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -327,6 +327,9 @@ body {
 
 .btn-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:1rem;
   gap: 1rem;
 }
 
@@ -391,7 +394,7 @@ table {
   background-color: #fef2f2;
 }
 
-.easy-row {
+/* .easy-row {
   background-color: var(--easy-green);
 }
 .medium-row {
@@ -399,10 +402,17 @@ table {
 }
 .hard-row {
   background-color: var(--hard-red);
-}
+} */
+
+
+
 .easy-row,
 .medium-row,
 .hard-row {
   border: #333333 1px solid;
+  cursor:pointer;
   border-radius: 3px;
+  padding: 5px;
+  background-color: var(--primary-color);
+  color:var(--background-color)
 }
