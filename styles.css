@@ -414,5 +414,11 @@ table {
   border-radius: 3px;
   padding: 5px;
   background-color: var(--primary-color);
-  color:var(--background-color)
+  color:var(--background-color);
+}
+
+.easy-row:hover,
+.medium-row:hover,
+.hard-row:hover {
+  background-color: #5254f8;
 }
